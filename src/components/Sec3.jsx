@@ -38,9 +38,9 @@ const Sec3 = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="h-screen flex flex-col gap-20 justify-center items-center px-4"
+      className="min-h-screen flex flex-col sm:gap-20 gap-8 justify-center items-center px-4 py-2"
     >
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="sm:text-4xl text-xl font-bold text-center">
         How Clients{" "}
         <span className="bg-gradient-to-r from-[#EDAC00] to-[#D58C00] rounded-full px-6 py-2 text-white">
           WIN
@@ -51,14 +51,14 @@ const Sec3 = forwardRef((props, ref) => {
       
       <div
         ref={boxRef}
-        className="w-full grid grid-cols-[2fr_1fr_1fr] gap-8"
+        className="w-full grid sm:grid-cols-[2fr_1fr_1fr] gap-8"
       >
         
         <Tilty
           max={15}
           glare={true}
           maxGlare={0.4}
-          className="box h-[65vh] rounded-xl bg-[#ADA2CC] shadow-xl p-6 cursor-pointer group"
+          className="box sm:h-[65vh] rounded-xl bg-[#ADA2CC] shadow-xl p-6 cursor-pointer group"
         >
           <div className="flex flex-col h-full w-full ">
            
@@ -86,7 +86,7 @@ const Sec3 = forwardRef((props, ref) => {
           max={15}
           glare={true}
           maxGlare={0.4}
-          className="box h-[65vh] rounded-xl bg-[#8EC5FF] shadow-xl p-6 cursor-pointer group"
+          className="box sm:h-[65vh] rounded-xl bg-[#8EC5FF] shadow-xl p-6 cursor-pointer group"
         >
           <div className="flex flex-col h-full w-full ">
            
@@ -113,7 +113,7 @@ const Sec3 = forwardRef((props, ref) => {
           max={15}
           glare={true}
           maxGlare={0.4}
-          className="box h-[65vh] rounded-xl bg-[#BFD176] shadow-xl p-6 cursor-pointer group"
+          className="box sm:h-[65vh] rounded-xl bg-[#BFD176] shadow-xl p-6 cursor-pointer group"
         >
           <div className="flex flex-col h-full w-full ">
            

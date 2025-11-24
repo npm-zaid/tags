@@ -98,12 +98,12 @@ const Carousel = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} className=" py-20 px-4 flex flex-col gap-10 items-center">
+    <div ref={ref} className=" py-20 px-4 flex flex-col sm:gap-10 gap-3 items-center">
 
      
       <h1
         ref={titleRef}
-        className="text-6xl font-bold text-zinc-800 tracking-tight"
+        className="sm:text-6xl text-3xl font-bold text-zinc-800 tracking-tight"
       >
         Featured Work
       </h1>
@@ -131,11 +131,11 @@ const Carousel = forwardRef((props, ref) => {
             <SwiperSlide key={i}>
               <div
                 ref={(el) => (cardRefs.current[i] = el)}
-                className="bg-zinc-200/80 border border-zinc-200 flex items-center rounded-3xl shadow-xl p-12 gap-10"
+                className="bg-zinc-200/80 border border-zinc-200 sm:flex-row flex flex-col-reverse  items-center rounded-3xl shadow-xl sm:p-12 p-4 gap-10"
               >
                 
-                <div className="w-1/2 flex flex-col gap-5">
-                  <h1 className="card-title text-5xl font-bold text-zinc-900">
+                <div className="sm:w-1/2 flex flex-col sm:gap-5 gap-3">
+                  <h1 className="card-title sm:text-5xl text-3xl font-bold text-zinc-900">
                     {item.title}
                   </h1>
 
@@ -143,7 +143,7 @@ const Carousel = forwardRef((props, ref) => {
 
                   <div className="flex gap-12 mt-4">
                     <div>
-                      <h2 className="text-4xl font-bold text-zinc-800">
+                      <h2 className="sm:text-4xl text-3xl font-bold text-zinc-800">
                         {item.downloads}
                       </h2>
                       <p className="text-sm text-zinc-500">
@@ -151,7 +151,7 @@ const Carousel = forwardRef((props, ref) => {
                       </p>
                     </div>
                     <div>
-                      <h2 className="text-4xl font-bold text-zinc-800">
+                      <h2 className="sm:text-4xl text-3xl font-bold text-zinc-800">
                         {item.adoption}
                       </h2>
                       <p className="text-sm text-zinc-500">
@@ -166,7 +166,7 @@ const Carousel = forwardRef((props, ref) => {
                 </div>
 
                
-                <div className="w-1/2">
+                <div className="sm:w-1/2">
                   <img
                     src={item.img}
                     className="rounded-3xl w-full h-[300px] object-cover shadow-xl"

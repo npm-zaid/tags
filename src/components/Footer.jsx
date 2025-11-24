@@ -57,12 +57,12 @@ const Footer = () => {
   return (
     <div
       ref={footerRef}
-      className="bg-zinc-100 p-10 grid md:grid-cols-4 grid-cols-2 gap-10"
+      className="bg-zinc-100 sm:p-10 p-4 grid md:grid-cols-4 grid-cols-2 gap-10"
     >
       
       <div className="flex flex-col gap-5">
         <img
-          className="w-40 cursor-pointer"
+          className="sm:w-40 w-30 cursor-pointer"
           src={logo}
           alt="Logo"
           

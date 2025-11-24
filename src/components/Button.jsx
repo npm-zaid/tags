@@ -21,7 +21,7 @@ const Button = ({ children }) => {
       "
     >
       {/* TEXT */}
-      <span className="text-[1.4vw] font-bold tracking-[1px]">
+      <span className="sm:text-[1.4vw] text-[4vw] font-bold tracking-[1px]">
         {children}
       </span>
 

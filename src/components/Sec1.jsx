@@ -102,12 +102,12 @@ const Sec1 = forwardRef((props, ref) => {
       }}
       className="min-h-screen relative flex flex-col gap-4 justify-center items-center pt-[15vh]"
     >
-      <div className="flex flex-col items-center justify-center gap-7 overflow-hidden p-8">
+      <div className="flex  flex-col items-center justify-center gap-7 overflow-hidden p-8">
         <h1
           className="
             sec1-title 
-            text-[4.5vw] leading-[5vw] tracking-wide py-2
-            w-[50vw] text-center 
+            sm:text-[4.5vw] text-[10vw] sm:leading-[5vw] leading-[10vw]  tracking-wide py-2
+            sm:w-[50vw] text-center 
             overflow-hidden inline-block
           "
         >
@@ -122,7 +122,7 @@ const Sec1 = forwardRef((props, ref) => {
 
       <div className="w-full relative p-8 z-30">
         {/* BIG IMAGE */}
-        <div ref={bigRef} className="w-[60vw] m-auto sec1-card">
+        <div ref={bigRef} className="sm:w-[60vw] m-auto sec1-card">
           <img
             className="w-full h-full object-fill"
             src={middle}
@@ -133,7 +133,7 @@ const Sec1 = forwardRef((props, ref) => {
         {/* LEFT IMAGE */}
         <img
           ref={leftRef}
-          className="w-[20vw] absolute top-[5vw] left-[5vw]"
+          className="sm:w-[20vw] w-1/3 absolute top-[5vw] sm:left-[5vw] left-[0vw]"
           src={left}
           alt=""
         />
@@ -141,7 +141,7 @@ const Sec1 = forwardRef((props, ref) => {
         {/* RIGHT IMAGE */}
         <img
           ref={rightRef}
-          className="w-[20vw] absolute top-[8vw] right-[5vw]"
+          className="sm:w-[20vw] w-1/3 absolute sm:top-[8vw] top-[5vw] sm:right-[5vw] right-0"
           src={right}
           alt=""
         />

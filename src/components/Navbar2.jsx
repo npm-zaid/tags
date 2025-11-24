@@ -1,9 +1,9 @@
-'use client';
 
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Button from "./Button";
 import logo from '../assets/main-logo.png'
+import {Menu} from 'lucide-react'
 
 
 
@@ -103,7 +103,7 @@ const Navbar2 = () => {
     <nav ref={navRef} className=" fixed w-full backdrop-blur-md  flex gap-4 px-6 py-2 z-50 rounded-lg justify-between items-center">
 
       
-      <div className="w-[8vw]">
+      <div className="sm:w-[8vw] w-[18vw]">
         <img
           className="w-full h-full object-fill"
           src={logo}
@@ -112,14 +112,20 @@ const Navbar2 = () => {
       </div>
 
     
-      <div className="flex gap-4">
+      <div className="hidden sm:flex gap-4 ">
         {links.map((item) => (
           <NavItem key={item.label} label={item.label} stroke={item.stroke} />
         ))}
       </div>
 
 
-      <Button>Request Demo</Button>
+      <div className="hidden sm:block gap-4 ">
+        <Button>Request Demo</Button>
+      </div>
+      
+        <div className="block sm:hidden gap-4 ">
+       <Menu/>
+      </div>
     </nav>
   );
 };

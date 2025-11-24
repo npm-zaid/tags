@@ -64,17 +64,17 @@ const Sec2 = forwardRef((props, ref) => {
       ref={ref}
       className="sec2 h-[50vh] w-full bg-white flex flex-col items-center justify-center relative"
     >
-      <h1 className="text-2xl font-bold mb-6">
+      <h1 className="sm:text-2xl text-lg font-bold mb-6">
         Over <span className="text-[#6A5C98]">20+ businesses</span> growing with Tags
       </h1>
 
-      <div className="relative overflow-hidden w-[90%] p-8">
+      <div className="relative  overflow-hidden sm:w-[90%] p-8">
 
         {/* LEFT BLUR BOX */}
-        <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white via-white/70 to-transparent backdrop-blur-md pointer-events-none z-20"></div>
+        <div className="absolute left-0 top-0 h-full sm:w-20 w-5 bg-gradient-to-r from-white via-white/70 to-transparent backdrop-blur-md pointer-events-none z-20"></div>
 
         {/* RIGHT BLUR BOX */}
-        <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white via-white/70 to-transparent backdrop-blur-md pointer-events-none z-20"></div>
+        <div className="absolute right-0 top-0 h-full sm:w-20 w-5   bg-gradient-to-l from-white via-white/70 to-transparent backdrop-blur-md pointer-events-none z-20"></div>
 
         <div ref={trackRef} className="box-container flex gap-6 relative z-10">
           {images.map((src, i) => (
