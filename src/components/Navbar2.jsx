@@ -3,12 +3,10 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Button from "./Button";
+import logo from '../assets/main-logo.png'
 
 
 
-// ---------------------------------------------------
-// NAV ITEM (SVG PATH + GSAP ANIMATION)
-// ---------------------------------------------------
 const NavItem = ({ label, stroke = "#ed5af2" }) => {
   const anchorRef = useRef(null);
   const pathRef = useRef(null);
@@ -75,13 +73,10 @@ const NavItem = ({ label, stroke = "#ed5af2" }) => {
 
 
 
-// ---------------------------------------------------
-// NAVBAR 2 (FULL COMPONENT)
-// ---------------------------------------------------
+
 const Navbar2 = () => {
      const navRef = useRef(null);
 
-     // Scroll animation logic
   useEffect(() => {
     let prevScrollY = window.scrollY;
     const handleScroll = () => {
@@ -107,16 +102,16 @@ const Navbar2 = () => {
   return (
     <nav ref={navRef} className=" fixed w-full backdrop-blur-md  flex gap-4 px-6 py-2 z-50 rounded-lg justify-between items-center">
 
-      {/* LOGO */}
+      
       <div className="w-[8vw]">
         <img
           className="w-full h-full object-fill"
-          src="http://135.235.137.31:5008/images/main-logo.png"
+          src={logo}
           alt="logo"
         />
       </div>
 
-      {/* LINKS */}
+    
       <div className="flex gap-4">
         {links.map((item) => (
           <NavItem key={item.label} label={item.label} stroke={item.stroke} />

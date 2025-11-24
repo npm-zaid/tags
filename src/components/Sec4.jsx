@@ -3,6 +3,7 @@ import { forwardRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Button from "./Button";
+import dash from '../assets/dashboard.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,8 @@ const Sec4 = forwardRef((props, ref) => {
 
         <div className="w-full visionContent2 sm:text-2xl text-xl font-semibold flex flex-col gap-10">
           <img
-            src="http://135.235.137.31:5008/images/dashboard.png"
+            className="w-full h-full object-fill"
+            src={dash}
             alt="dashboard"
           />
         </div>

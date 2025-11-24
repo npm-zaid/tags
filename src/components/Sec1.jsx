@@ -6,6 +6,9 @@ import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Button from "./Button";
+import left from '../assets/ctr.svg'  
+import right from '../assets/impression.svg'  
+import middle from '../assets/realtime.svg'  
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -122,7 +125,7 @@ const Sec1 = forwardRef((props, ref) => {
         <div ref={bigRef} className="w-[60vw] m-auto sec1-card">
           <img
             className="w-full h-full object-fill"
-            src="http://135.235.137.31:5008/icons/realtime.svg"
+            src={middle}
             alt=""
           />
         </div>
@@ -131,7 +134,7 @@ const Sec1 = forwardRef((props, ref) => {
         <img
           ref={leftRef}
           className="w-[20vw] absolute top-[5vw] left-[5vw]"
-          src="http://135.235.137.31:5008/icons/ctr.svg"
+          src={left}
           alt=""
         />
 
@@ -139,7 +142,7 @@ const Sec1 = forwardRef((props, ref) => {
         <img
           ref={rightRef}
           className="w-[20vw] absolute top-[8vw] right-[5vw]"
-          src="http://135.235.137.31:5008/icons/impression.svg"
+          src={right}
           alt=""
         />
       </div>

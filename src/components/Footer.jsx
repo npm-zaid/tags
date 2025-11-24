@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Linkedin } from "lucide-react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
+import logo from '../assets/main-logo.png'
 
 gsap.registerPlugin(SplitText);
 
@@ -62,7 +63,7 @@ const Footer = () => {
       <div className="flex flex-col gap-5">
         <img
           className="w-40 cursor-pointer"
-          src="http://135.235.137.31:5008/images/main-logo.png"
+          src={logo}
           alt="Logo"
           
         />
